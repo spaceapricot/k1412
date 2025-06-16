@@ -17,10 +17,10 @@ Date: 2025-05-30
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-blue: #2A62B6;
-            --secondary-teal: #4ECDC4;
+            --primary-blue: #538f60;
+            --secondary-teal: #aae3a3;
             --accent-grey: #A9A9A9;
-            --supporting-light-blue: #E0F2FE;
+            --supporting-light-blue: #e1fee0;
             --dark-text: #263238;
             --light-background: #FFFFFF;
             --page-background: #F4F7F9;
@@ -323,7 +323,7 @@ Date: 2025-05-30
                 datasets: [{
                     label: 'AI 활용 현황',
                     data: [16, 2], // 18명 중 16명 활용
-                    backgroundColor: ['#2A62B6', '#A9A9A9'],
+                    backgroundColor: ['#538f60', '#A9A9A9'],
                     hoverOffset: 4
                 }]
             },
@@ -363,24 +363,23 @@ Date: 2025-05-30
                 datasets: [{
                     label: '학생 수 (총 18명)',
                     data: [14], // 14명 (77.8%)
-                    backgroundColor: ['#4ECDC4'],
-                    borderColor: ['#4AA098'],
+                    backgroundColor: ['#aae3a3'],
+                    borderColor: ['#8BCF84'],
                     borderWidth: 1
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                indexAxis: 'y', // 가로 막대형 차트
                  scales: {
-                    x: {
+                    y: {
                         beginAtZero: true,
                         max: 18, // 전체 학생 수
                         ticks: {
                              font: { family: "'Noto Sans KR', sans-serif", size: 10 }
                         }
                     },
-                    y: {
+                    x: {
                         ticks: {
                              font: { family: "'Noto Sans KR', sans-serif", size: 10 },
                              callback: function(value) { // 레이블 줄바꿈 처리
@@ -418,7 +417,7 @@ Date: 2025-05-30
                 datasets: [{
                     label: '질문 반복 수정 비율',
                     data: [14, 4],
-                    backgroundColor: ['#2A62B6', '#A9A9A9'],
+                    backgroundColor: ['#538f60', '#A9A9A9'],
                     hoverOffset: 4
                 }]
             },
@@ -452,3 +451,4 @@ Date: 2025-05-30
     </script>
     </body>
 </html>
+
